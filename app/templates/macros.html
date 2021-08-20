@@ -1,0 +1,18 @@
+{%extends 'bootstrap/base.html'%}
+{%macro displayPizza(pizzas)%}
+{%for pizza in pizzas%}
+
+    
+<div class="card col-md" style="background-color: rgb(194, 194, 197); padding:20px;margin:5px;max-width:500px;height:310px;max-height:400px">
+    <div class="row" style="height:120px">{{pizzas.name}}</div>
+
+    <div class="row" style="margin-left:10px;padding-left:10px">
+        <h4>Details</h4>
+        <div class="row">Size{{pizzas.size}}</div>
+        <div class="row">Crust: {{pizzas.crust}}</div>
+        <div class="row">Toppings: {{pizzas.toppings}}</div>
+    </div>
+</div>
+
+{%endfor%}
+{%endmacro%}

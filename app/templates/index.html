@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{%import 'macros.html' as macro%}
+{% block styles %}
+{{super()}}
+
+<link type="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+
+{% endblock %}
+{%block content%}
+<br>
+<div class="container" style="justify-content:space-evenly">
+    <div class="container" style="text-align: center">
+        <h1><b> Pizza Shop </b></h1>
+        <h4><i> Your home for quality Pizza </i></h4>
+    </div>
+    <br>
+    <div class="container" style="text-align: center">
+        <h2><b>Menu</b></h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class="panel panel-group">
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><b>Bacon Supreme</b></h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <b>Toppings:</b><i> Bacon, Onions</i>
+                    <br>
+                    <br>
+                    <b>Description:</b><b> A pizza for true bacon lovers.</b>
+                </div>
+            <br>
+            </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><b>Veggie Delight</b></h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <b>Toppings:</b><i> Mushrooms, Onions</i>
+                    <br>
+                    <br>
+                    <b>Description:</b><b> A healthy vegeterian option.</b>
+                </div>
+            <br>
+            </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><b>Meat Deluxe</b></h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <b>Toppings:</b><i> Bacon, Pepperoni, Sausage</i>
+                    <br>
+                    <br>
+                    <b>Description:</b><b> A meat lover's paradise.</b>
+                </div>
+            <br>
+            </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><b>Pizza Italiano</b></h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <b>Toppings:</b><i> Pepperoni, Onions</i>
+                    <br>
+                    <br>
+                    <b>Description:</b><b> A little taste of Italy..</b>
+                </div>
+            <br>
+            </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3><b>Hawaiian</b></h3>
+                </div>
+                <div class="panel-body">
+                    <br>
+                    <b>Toppings:</b><i> Bacon, Pineapple</i>
+                    <br>
+                    <br>
+                    <b>Description:</b><b> Always a fan favourite.</b>
+                </div>
+            <br>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}

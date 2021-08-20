@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%import 'bootstrap/wtf.html' as wtf%}
+{% block content %}
+
+<div class="container">
+   
+    <div class="col-md">
+        <div class="card">
+            <div class="row" style="text-align:center"><h1>About</h1></div>
+            <br>
+
+            {%if current_user.contact%}
+            <div class="panel panel-default">
+                <div class = "panel-body">
+                    <b class="row">    Name:  {{current_user.username}}</b>
+                    <br>
+                    <b class="row">    Address:  {{current_user.address}}</b>
+                    <br>
+                    <b class="row">    Email:  {{current_user.email}}</b>
+                    <br>
+                    <b class="row">    Contact:  0/{{current_user.contact}}</b>
+                </div>
+            </div>
+            {%else%}
+
+            <div class="row">No Image</div>
+            {%endif%}
+            <br>
+            <hr>
+            <br>
+           <a href="{{url_for('auth.updateuser')}}"><button>Update</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

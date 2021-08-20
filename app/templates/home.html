@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+<div class="container" style="text-align: center;">
+    <div class="col-7">
+        <div class="row">
+            Order Now!
+        </div>
+        <div class="row">
+            {{wtf.quick_form(OrderForm)}}
+        </div>
+    </div>
+ </div>
+
+{% block content %}
+
+
+{% endblock %}
